@@ -43,11 +43,12 @@ data = [
 cursor.executemany(iq, data)
 
 ##
-### Queries
+### Welcome menus
 ##
 
 
 def menu():
+    print("[0] Exit")
     print("[1] Select all books")
     print("[2] Select all books, but order by price")
     print("[3] Select all books, but order by rating")
@@ -55,10 +56,23 @@ def menu():
     print("[5] Select all books, but order by author")
 
 def menu_2():
+    print("[0] Exit")
     print("[1] Select all books")
 
 
+def welcome():
+    print("Welcome to the INST326 bookstore! You will be able to view different versions of our catalog by entering options on your keyboard.")
+    print("""
+Enter a password, weak passwords have the following parameters:
 
+- More than 8 characters
+- At least one number
+- At least one upper case letter
+- At least one lower case letter 
+- At least one special character from [$, @, #, %]
+
+Strong passwords will have more than 16 characters and access to more options.
+    """)
 
 
 
